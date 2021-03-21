@@ -12,7 +12,7 @@ public class Wall : MonoBehaviour
         GameManager.Instance.speed -= Time.deltaTime;
         if (transform.position.x < -10)
         {
-            GameManager.Instance.스코어++;
+            GameManager.Instance.Score++;
             Destroy(gameObject);
         }
     }

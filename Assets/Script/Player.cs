@@ -22,13 +22,10 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGround > 0)
         {
-            if (isGround>0)
-            {
-                isGround --;
-                rd.AddForce(Vector2.up * jumpSeed, ForceMode2D.Impulse);
-            }
+            isGround--;
+            rd.AddForce(Vector2.up * jumpSeed, ForceMode2D.Impulse);
         }
     }
 }
