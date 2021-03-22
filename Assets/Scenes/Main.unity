@@ -797,7 +797,6 @@ GameObject:
   - component: {fileID: 2018348102}
   - component: {fileID: 2018348101}
   - component: {fileID: 2018348100}
-  - component: {fileID: 2018348103}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -885,6 +884,8 @@ MonoBehaviour:
   jumpSeed: 150
   isGround: 2
   rd: {fileID: 2018348102}
+  angle: 90
+  sliding: 0
 --- !u!61 &2018348101
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -932,20 +933,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2018348103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018348097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8bd0e94b89decf45a5f28f20149e8b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  angle: 90
-  sliding: 0
 --- !u!1 &2090877062
 GameObject:
   m_ObjectHideFlags: 0

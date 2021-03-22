@@ -8,6 +8,10 @@ public class Player : MonoBehaviour
     public float jumpSeed = 5f;
     public int isGround =2;
     public Rigidbody2D rd;
+    [SerializeField]
+    public int angle = 90;
+    [SerializeField]
+    public bool sliding = false;
 
     private void Start()
     {
@@ -19,6 +23,7 @@ public class Player : MonoBehaviour
         {
             isGround = 2;
         }
+        sliding = true;
     }
     private void Update()
     {
@@ -26,6 +31,23 @@ public class Player : MonoBehaviour
         {
             isGround--;
             rd.AddForce(Vector2.up * jumpSeed, ForceMode2D.Impulse);
+        }
+
+        if (isGround >= 2)
+        {
+            sliding = true;
+        }
+        else
+            sliding = false;
+
+        if (Input.GetKeyDown(KeyCode.S) && sliding ==true)
+        {
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, 90));
+        }
+        else if (Input.GetKeyUp(KeyCode.S))
+        {
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            sliding = false;
         }
     }
 }
