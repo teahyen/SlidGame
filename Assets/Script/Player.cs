@@ -42,6 +42,9 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S) && sliding ==true)
         {
+            
+            if (Input.GetKeyDown(KeyCode.Space))
+                return;
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, 90));
         }
         else if (Input.GetKeyUp(KeyCode.S))
