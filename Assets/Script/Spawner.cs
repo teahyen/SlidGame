@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
         {
             Vector3 pos = transform.position;
             pos.y += Random.Range(-range, range);
-            Instantiate(wallPrefad[Random.Range(0, 1)], pos, transform.rotation);
+            Instantiate(wallPrefad[Random.Range(0, 2)], pos, transform.rotation);
 
             yield return new WaitForSeconds(interval);
         }

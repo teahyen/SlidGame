@@ -163,10 +163,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3832723, y: -0.31778225, z: -0.3608949}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1465465103}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &469484902
 MonoBehaviour:
@@ -177,12 +176,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 469484899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77154a4cc8d308b4ca0f7984d86129b5, type: 3}
+  m_Script: {fileID: 11500000, guid: acc2a458f98cc1247910b92ec20e01c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 0
-  speed: -5
-  text_score: {fileID: 2005864446}
+  list_score: {fileID: 2005864446}
 --- !u!1 &529960148
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,11 +552,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465465100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3832723, y: 0.31778225, z: 0.3608949}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 469484901}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1790977770
 GameObject:
@@ -573,7 +570,7 @@ GameObject:
   - component: {fileID: 1790977773}
   - component: {fileID: 1790977772}
   m_Layer: 5
-  m_Name: Text
+  m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -735,7 +732,7 @@ GameObject:
   - component: {fileID: 2005864447}
   - component: {fileID: 2005864446}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

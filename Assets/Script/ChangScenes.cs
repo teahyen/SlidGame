@@ -8,5 +8,6 @@ public class ChangScenes : MonoBehaviour
     public void GoMaion()
     {
         SceneManager.LoadScene("Main");
+        GameManager.Instance.Respawn = true;
     }
 }

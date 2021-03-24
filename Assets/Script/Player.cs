@@ -30,27 +30,17 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGround > 0)
         {
             isGround--;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
             rd.AddForce(Vector2.up * jumpSeed, ForceMode2D.Impulse);
         }
-
-        if (isGround >= 2)
+        else if (Input.GetKey(KeyCode.S) && isGround.Equals(2))
         {
-            sliding = true;
-        }
-        else
-            sliding = false;
-
-        if (Input.GetKeyDown(KeyCode.S) && sliding ==true)
-        {
-            
-            if (Input.GetKeyDown(KeyCode.Space))
-                return;
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, 90));
         }
         else if (Input.GetKeyUp(KeyCode.S))
         {
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-            sliding = false;
         }
+       
     }
 }

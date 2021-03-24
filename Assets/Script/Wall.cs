@@ -8,7 +8,7 @@ public class Wall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(GameManager.Instance.speed *0.2f*Time.deltaTime, 0, 0);
+        transform.Translate(GameManager.Instance.speed *1f*Time.deltaTime, 0, 0);
         GameManager.Instance.speed -= Time.deltaTime;
         if (transform.position.x < -10)
         {
