@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour{
 
     private void Start()
     {
-        Respawn = false;
+        Respawn = false; //깃허브 실험용
     }
 
     public void UpdateScore(Text text)
