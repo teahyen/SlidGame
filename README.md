@@ -7,7 +7,9 @@
 
 간단한 게임 설명 : 구글에 공룡게임을 모티브로 만들었습니다.
 
-출시 :[itch.io](https://itch.io/game/edit/972225#published)
+~~현재 리소스 보류중~~
+
+출시 :[itch.io](https://roat.itch.io/demon-run)
 
 
 ```
